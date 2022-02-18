@@ -5,7 +5,11 @@
     <title>My website</title>
     <link rel="stylesheet" href="styles.css">
   </head>
-  <body>
+  <body onload="alert('Hello from inline js');">  <!-- inline js bad practice -->
     <h1>Hello</h1>
+    <script type="text/javascript">  <!-- internal js -->
+      alert("Hello from internal js");
+    </script>
+    <script src="index.js" charset="utf-8"></script>
   </body>
 </html>
